@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./Imagenes/favicon.ico">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    
+<!--Creando el encabezado de la pagina-->
+<!--Logo de Alura-->
+
+    <header>
+        <a href="#">
+            <img src="./Imagenes/logo.svg" alt="logoAlura" class="logoAlura">
+        </a>
+    </header>
+
+<!--Cuerpo principal del encriptador de texto (ingresar texto)-->
+
+    <main>
+        <section class="entradaEncriptador" style="">
+
+            <textarea class="encriptar" placeholder="Escribe o pega un texto aqui..."></textarea>
+
+            <div class="encriptadorAviso" style="align-items: end;">
+               <img src="./Imagenes/Advertencia.png" alt="Imagen De Aviso" class="imagen-aviso" width="20"> 
+               <p class="texto-aviso">Solo letras minusculas y sin acentos</p>
+            </div>
+            
+            <div class="encriptador-contenedor">
+                <button type="submit" class="boton-cifrar">Cifrar</button>
+                <button type="submit" class="boton-desencriptar">Desencriptar</button>
+            </div>
+
+        </section>
+
+<!--Seccion de la vista previa del cifrado y desncriptado-->
+
+        <section class="informacionTarjeta">
+
+            <div class="tarjeta-contenedor">
+
+                <img src="./Imagenes/pngwing.png" alt="Imagen Buscando" class="imagen-animada" width="250">
+                <p class="texto1">Lo sentimos, ningun mensaje fue encontado.</p>
+                <p class="texto2">Ingresa el texto que deseas encriptar o desencriptar.</p>
+
+            </div>
+
+            <textarea type="mensaje" class="evaluar" readonly></textarea><!--readonly nos indica que no podemos modificar el texto de un area-->
+            <button type="submit" class="boton-copiar">Copiar</button>
+            
+        </section>
+    </main>
+
+<!--Footer de la pagina-->
+    <footer>
+<!--Copyright de la pagina-->
+        <p class="copyright">&copy; Copyright 2024 - Encriptador De Texto</p>
+<!--Contactos y mas informacion-->
+        <a href="https://www.linkedin.com/in/luisito-jimenez/" rel="">
+            <img src="./Imagenes/linkedin.svg" alt="logo LinkedIn" class="linkedin" width="50">
+        </a>
+
+        <a href="https://github.com/LuisitoJimenez" rel="">
+            <img src="./Imagenes/Github.png" alt="logo GitHub" class="gitHub" width="50">
+        </a>
+        
+    </footer>
+
+    <script src="./js/encriptador.js"></script>
+
+</body>
+</html>
